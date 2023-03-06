@@ -12,7 +12,7 @@ class AddTask extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    late String newTask;
+    late String? newTask;
 
     return Container(
       color: Color(0xFF757575),
@@ -59,7 +59,7 @@ class AddTask extends StatelessWidget {
                   ),
                 ),
                 onPressed: (){
-                  Provider.of<TaskData>(context, listen: false).addTask(newTask);
+                  Provider.of<TaskData>(context, listen: false).addTask(newTask!);
                   Navigator.pop(context);
                 },
               ),
