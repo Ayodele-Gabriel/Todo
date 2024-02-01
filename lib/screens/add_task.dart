@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:todo/models/task.dart';
 import 'package:todo/models/task_data.dart';
-import 'package:todo/screens/task_screen.dart';
-import 'package:todo/widgets/task_list.dart';
 
 class AddTask extends StatelessWidget {
   const AddTask({Key? key,
